@@ -1,12 +1,12 @@
 main {
-  & .main__top-page {
+  & .top-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #f7f7f7;
 
-    & .main__top-page__form {
+    & .top-page__form {
       padding: 10px 0;
       width: 100%;
       background-color: #eaeaea;
@@ -21,7 +21,7 @@ main {
       }
     }
   }
-  & .main__top-page__location {
+  & .top-page__location {
     display: flex;
     flex-direction: column;
     padding: 30px 10px;
@@ -35,6 +35,51 @@ main {
       text-align: center;
       font-size: 17px;
       margin-bottom: 25px;
+    }
+  }
+
+  .indications {
+    padding: 35px 10px;
+
+    .indications__header {
+      margin-left: 10px;
+      h2 {
+        margin-bottom: 24px;
+      }
+    }
+    .indications__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & li {
+        width: 90%;
+        padding: 20px 20px;
+        background: #f7f7f7;
+        -webkit-box-shadow: 1px 3px 10px -2px rgba(153, 153, 153, 0.84);
+        box-shadow: 1px 3px 10px -2px rgba(153, 153, 153, 0.84);
+        border-radius: 20px;
+        margin-bottom: 24px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: #f5edff;
+          transition: 0.2s ease-in;
+        }
+
+        span {
+          margin-right: 20px;
+
+          & :hover {
+            color: $primary;
+            transition: 0.2s ease-in;
+          }
+        }
+      }
     }
   }
 }
