@@ -1,0 +1,39 @@
+main {
+  & .main__top-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+
+    & .main__top-page__form {
+      padding: 10px 0;
+      width: 100%;
+      background-color: #eaeaea;
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          margin-right: 17px;
+        }
+      }
+    }
+  }
+  & .main__top-page__location {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+
+    h2 {
+      text-align: center;
+      padding: 0px 10px;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: center;
+      font-size: 17px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// Import des fonts nécessaires au projet (Shrikhand pour logo et titres - Roboto pour texte)
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+input::placeholder {
+  color: #353535;
+}

@@ -1,3 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
+}
 
+html,
+body {
+  height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  display: block;
+  outline: none;
+}
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+input[type=submit]:hover,
+button:hover {
+  cursor: pointer;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+textarea {
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+input::placeholder {
+  color: #353535;
+}
+
+header {
+  padding: 7px 0;
+}
+header .header__logo > img {
+  object-fit: contain;
+  margin: 0 auto;
+  width: 160px;
+  height: 44px;
+}
+
+main .main__top-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+main .main__top-page .main__top-page__form {
+  padding: 10px 0;
+  width: 100%;
+  background-color: #eaeaea;
+}
+main .main__top-page .main__top-page__form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main__top-page .main__top-page__form form i {
+  margin-right: 17px;
+}
+main .main__top-page__location {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+}
+main .main__top-page__location h2 {
+  text-align: center;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+main .main__top-page__location p {
+  text-align: center;
+  font-size: 17px;
+}
 
 /*# sourceMappingURL=style.css.map */
