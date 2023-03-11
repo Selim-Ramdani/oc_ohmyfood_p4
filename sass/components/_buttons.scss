@@ -1,0 +1,14 @@
+button {
+  color: #fff;
+  background: $linear-gradient;
+  padding: 13px 18px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 25px;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
