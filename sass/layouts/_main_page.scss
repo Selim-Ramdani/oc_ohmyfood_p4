@@ -57,8 +57,7 @@ main {
         width: 90%;
         padding: 20px 0px;
         background: #f7f7f7;
-        -webkit-box-shadow: 1px 3px 10px -2px rgba(153, 153, 153, 0.84);
-        box-shadow: 1px 3px 10px -2px rgba(153, 153, 153, 0.84);
+        box-shadow: 1px 3px 10px -2px rgba(153, 153, 153, 0.7);
         border-radius: 20px;
         margin-bottom: 24px;
 
@@ -99,7 +98,7 @@ main {
   }
 
   .restaurant {
-    padding: 35px 15px;
+    padding: 35px 15px 45px 15px;
     background-color: #f7f7f7;
 
     .restaurant__header {
@@ -108,14 +107,14 @@ main {
 
     .restaurant__cards {
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
-      row-gap: 15px;
+      grid-row-gap: 15px;
     }
 
     .restaurant__card {
       border-radius: 15px;
       overflow: hidden;
+      box-shadow: 1px 3px 10px -2px rgb(153 153 153 / 60%);
+
 
       & .card__img {
         position: relative;
@@ -148,7 +147,7 @@ main {
           position: absolute;
           top: 4vh;
           right: 5vh;
-        } 
+        }
         & i {
           position: absolute;
           transform: translateY(-50%);

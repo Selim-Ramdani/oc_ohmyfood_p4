@@ -82,6 +82,30 @@ a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 320px) {
+  .restaurant_cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurant__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurant__cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 15px;
+  }
+  .restaurant__cards .restaurant__card .card__img img {
+    height: 400px;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #000;
@@ -98,7 +122,6 @@ h2 {
 }
 
 h3 {
-  font-family: "Shrikhand", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -195,8 +218,7 @@ main .indications .indications__list li {
   width: 90%;
   padding: 20px 0px;
   background: #f7f7f7;
-  -webkit-box-shadow: 1px 3px 10px -2px rgba(153, 153, 153, 0.84);
-  box-shadow: 1px 3px 10px -2px rgba(153, 153, 153, 0.84);
+  box-shadow: 1px 3px 10px -2px rgba(153, 153, 153, 0.7);
   border-radius: 20px;
   margin-bottom: 24px;
 }
@@ -230,7 +252,7 @@ main .indications .indications__list li span {
   margin-right: 20px;
 }
 main .restaurant {
-  padding: 35px 15px;
+  padding: 35px 15px 45px 15px;
   background-color: #f7f7f7;
 }
 main .restaurant .restaurant__header {
@@ -238,13 +260,12 @@ main .restaurant .restaurant__header {
 }
 main .restaurant .restaurant__cards {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  row-gap: 15px;
+  grid-row-gap: 15px;
 }
 main .restaurant .restaurant__card {
   border-radius: 15px;
   overflow: hidden;
+  box-shadow: 1px 3px 10px -2px rgba(153, 153, 153, 0.6);
 }
 main .restaurant .restaurant__card .card__img {
   position: relative;
@@ -334,6 +355,7 @@ footer .footer__container .footer__header-title {
 }
 footer .footer__container .footer__header-title h3 {
   color: white;
+  font-family: "Shrikhand", sans-serif;
 }
 footer .footer__container .footer__links {
   display: flex;
