@@ -1,0 +1,17 @@
+.content__heart-gradient  {
+  & .fas {
+    color: transparent;
+    opacity: 0;
+    &:hover {
+      background-image: $linear-gradient;
+      -webkit-background-clip: text;
+      background-clip: text;
+      opacity: 1;
+      transition: opacity 0.3s ease-in;
+    }
+  }
+
+  & .fat {
+    background-image: #fff;
+  }
+}
