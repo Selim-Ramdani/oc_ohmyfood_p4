@@ -97,6 +97,12 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 p {
   font-size: 18px;
   font-weight: 300;
@@ -317,6 +323,34 @@ button:hover {
 }
 .content__heart-gradient .fat {
   background-image: #fff;
+}
+
+footer {
+  padding: 22px 0px 22px 15px;
+  background-color: #353535;
+}
+footer .footer__container .footer__header-title {
+  margin-bottom: 16px;
+}
+footer .footer__container .footer__header-title h3 {
+  color: white;
+}
+footer .footer__container .footer__links {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__container .footer__links li {
+  line-height: 20px;
+}
+footer .footer__container .footer__links li span i {
+  color: #fff;
+  margin-right: 11px;
+  height: 20px;
+  width: 20px;
+}
+footer .footer__container .footer__links li a {
+  color: #fff;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
