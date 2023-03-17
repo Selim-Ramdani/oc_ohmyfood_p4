@@ -268,7 +268,7 @@ main .restaurant .restaurant__card .card__img {
 }
 main .restaurant .restaurant__card .card__img span {
   top: 2vh;
-  right: 2vh;
+  right: 1vw;
   position: absolute;
 }
 main .restaurant .restaurant__card .card__img img {
@@ -291,7 +291,7 @@ main .restaurant .restaurant__card .card__content p {
 main .restaurant .restaurant__card .card__content .content__heart-gradient {
   position: absolute;
   top: 4vh;
-  right: 5vh;
+  right: 4vw;
 }
 main .restaurant .restaurant__card .card__content i {
   position: absolute;
