@@ -1,10 +1,13 @@
 // Variables de couleurs : Les 3 principales du site
 $primary: #9356dc;
+$primary-light: #9f6ddc;
 $secondary: #ff79da;
+$secondary-light: #fa91dc;
 $tertiary: #99e2d0;
 
 // Bouton, Coeur
 $linear-gradient: linear-gradient(360deg, $primary -10%, $secondary 101%);
+$linear-gradient-light: linear-gradient(360deg, $primary-light -10%, $secondary-light 100%);
 
 
 // Etiquette (Nouveau)
