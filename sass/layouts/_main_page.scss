@@ -111,10 +111,12 @@ main {
     }
 
     .restaurant__card {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-row-gap: 15px;
       border-radius: 15px;
       overflow: hidden;
       box-shadow: 1px 3px 10px -2px rgb(153 153 153 / 60%);
-
 
       & .card__img {
         position: relative;
