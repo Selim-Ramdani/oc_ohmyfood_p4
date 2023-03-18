@@ -288,10 +288,10 @@ main .restaurant .restaurant__card .card__content h2 {
 main .restaurant .restaurant__card .card__content p {
   font-size: 17px;
 }
-main .restaurant .restaurant__card .card__content .content__heart-gradient {
+main .restaurant .restaurant__card .card__content .heart-gradient {
   position: absolute;
   top: 4vh;
-  right: 4vw;
+  right: 6vh;
 }
 main .restaurant .restaurant__card .card__content i {
   position: absolute;
@@ -327,11 +327,11 @@ button:hover {
   border-radius: 2px;
 }
 
-.content__heart-gradient .fas {
+.heart-gradient .fas {
   color: transparent;
   opacity: 0;
 }
-.content__heart-gradient .fas:hover {
+.heart-gradient .fas:hover {
   background-image: linear-gradient(360deg, #9356dc -10%, #ff79da 101%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -366,6 +366,64 @@ footer .footer__container .footer__links li span i {
 footer .footer__container .footer__links li a {
   color: #fff;
   font-weight: 500;
+}
+
+.header__arrow {
+  position: absolute;
+  top: 2vh;
+  left: 6vw;
+}
+.header__arrow .arrow__icon i {
+  color: #353535;
+  font-size: 20px;
+}
+.header__arrow .arrow__icon i:hover {
+  cursor: pointer;
+}
+
+.main__restaurant .restaurant__img img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 275px;
+}
+.main__restaurant .restaurant__menu {
+  position: absolute;
+  padding: 32px 20px;
+  top: 44.5vh;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  background-color: #f7f7f7;
+}
+.main__restaurant .restaurant__menu .menu__header {
+  margin-bottom: 25px;
+}
+.main__restaurant .restaurant__menu .menu__header h1 {
+  font-weight: 400;
+  color: #101010;
+  font-size: 28px;
+}
+.main__restaurant .restaurant__menu .menu__header i {
+  top: 7vh;
+  right: 7vw;
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+.main__restaurant .restaurant__menu .menu__header i:hover {
+  cursor: pointer;
+}
+.main__restaurant .restaurant__menu .menu__container .menu__header h2 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.main__restaurant .restaurant__menu .menu__container .menu__header::after {
+  content: "";
+  height: 3px;
+  width: 40px;
+  background: #99E2D0;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
