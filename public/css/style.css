@@ -401,10 +401,10 @@ footer .footer__container .footer__links li a {
 .main__restaurant .restaurant__menu .menu__header h1 {
   font-weight: 400;
   color: #101010;
-  font-size: 28px;
+  font-size: 22px;
 }
 .main__restaurant .restaurant__menu .menu__header i {
-  top: 7vh;
+  top: 6.5vh;
   right: 7vw;
   position: absolute;
   transform: translateY(-50%);
@@ -422,8 +422,38 @@ footer .footer__container .footer__links li a {
   content: "";
   height: 3px;
   width: 40px;
-  background: #99E2D0;
+  background: #99e2d0;
   display: block;
+}
+.main__restaurant .restaurant__menu .menu__container .menu__items .menu__item {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 1px 3px 10px -2px rgba(153, 153, 153, 0.4);
+}
+.main__restaurant .restaurant__menu .menu__container .menu__items .menu__item:last-child {
+  margin-bottom: 30px;
+}
+.main__restaurant .restaurant__menu .menu__container .menu__items .menu__item h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.main__restaurant .restaurant__menu .menu__container .menu__items .menu__item p {
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 190px;
+}
+.main__restaurant .restaurant__menu .menu__container .menu__items .menu__item span {
+  position: absolute;
+  right: 6vw;
+  bottom: 1.5vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=style.css.map */

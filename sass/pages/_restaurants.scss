@@ -34,10 +34,10 @@
       h1 {
         font-weight: 400;
         color: #101010;
-        font-size: 28px;
+        font-size: 22px;
       }
       & i {
-        top: 7vh;
+        top: 6.5vh;
         right: 7vw;
         position: absolute;
         transform: translateY(-50%);
@@ -59,8 +59,41 @@
           content: "";
           height: 3px;
           width: 40px;
-          background: #99E2D0;
+          background: #99e2d0;
           display: block;
+        }
+      }
+      .menu__items {
+        .menu__item {
+          position: relative;
+          padding: 10px;
+          margin-bottom: 12px;
+          border-radius: 15px;
+          background-color: #fff;
+          box-shadow: 1px 3px 10px -2px rgba(153, 153, 153, 0.4);
+
+          &:last-child {
+            margin-bottom: 30px;
+          }
+          h3 {
+            font-size: 15px;
+            font-weight: 500;
+          }
+          p {
+            font-size: 13px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 190px;
+          }
+          span {
+            position: absolute;
+            right: 6vw;
+            bottom: 1.5vh;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-size: 13px;
+          }
         }
       }
     }
