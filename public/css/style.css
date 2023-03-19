@@ -339,6 +339,35 @@ button:hover {
   transition: opacity 0.3s ease-in;
 }
 
+.menu__item .menu__item-label {
+  position: absolute;
+  right: -19vw;
+  top: 0;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 50px;
+}
+.menu__item:hover {
+  cursor: pointer;
+}
+.menu__item:hover .menu__item-label {
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s ease-in;
+  right: 0vw;
+}
+.menu__item:hover .menu__item-label i {
+  color: #fff;
+  font-size: 20px;
+  animation-duration: 1s;
+  transition: 0.1s ease-in;
+  animation-name: rotation;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
+}
+
 footer {
   padding: 22px 0px 22px 15px;
   background-color: #353535;
@@ -426,6 +455,7 @@ footer .footer__container .footer__links li a {
   display: block;
 }
 .main__restaurant .restaurant__menu .menu__container .menu__items .menu__item {
+  overflow: hidden;
   position: relative;
   padding: 10px;
   margin-bottom: 12px;
