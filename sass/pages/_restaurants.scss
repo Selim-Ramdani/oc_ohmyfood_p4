@@ -65,6 +65,9 @@
       }
       .menu__items {
         .menu__item {
+          cursor: pointer;
+          max-width: 100%;
+          display: flex;
           overflow: hidden;
           position: relative;
           padding: 10px;
@@ -76,24 +79,61 @@
           &:last-child {
             margin-bottom: 30px;
           }
-          h3 {
-            font-size: 15px;
-            font-weight: 500;
-          }
-          p {
-            font-size: 13px;
+          .menu__item-header {
+            flex: 1;
             white-space: nowrap;
-            overflow: hidden;
             text-overflow: ellipsis;
-            max-width: 190px;
+            overflow: hidden;
+            h3 {
+              font-size: 15px;
+              font-weight: 500;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            p {
+              font-size: 13px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 220px;
+            }
           }
-          span {
-            position: absolute;
-            right: 6vw;
-            bottom: 1.5vh;
-            font-family: "Roboto", sans-serif;
-            font-weight: 700;
-            font-size: 13px;
+          .menu__item-price {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-right: -0.8rem;
+            span {
+              font-family: "Roboto", sans-serif;
+              font-weight: 700;
+              font-size: 13px;
+            }
+          }
+          .menu__item-checking {
+            background-color: $tertiary;
+            width: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease-in-out;
+            margin: -1rem -5rem -1rem 1.8rem;
+
+            & i {
+              height: 1.3rem;
+              width: 1.3rem;
+              background-color: white;
+              color: $tertiary;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 100px;
+            }
+          }
+          &:hover {
+            & .menu__item-checking {
+              margin-right: -1rem;
+            }
           }
         }
       }
