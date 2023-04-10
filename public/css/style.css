@@ -98,6 +98,11 @@ a {
   .restaurant__cards .restaurant__card .card__img img {
     height: 400px;
   }
+  .menu__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -486,13 +491,12 @@ footer .footer__container .footer__links li a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 220px;
 }
 .main__restaurant .restaurant__menu .menu__container .menu__items .menu__item .menu__item-price {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-right: -0.8rem;
+  margin-right: -1rem;
 }
 .main__restaurant .restaurant__menu .menu__container .menu__items .menu__item .menu__item-price span {
   font-family: "Roboto", sans-serif;
