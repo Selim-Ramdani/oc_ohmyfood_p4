@@ -113,7 +113,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            transform: rotate(180deg);
             transition: 0.5s;
             margin: -1rem -5rem -1rem 1.8rem;
 
@@ -129,7 +128,7 @@
             }
           }
           &:hover {
-            & .menu__item-checking {
+            .menu__item-checking {
               margin-right: -1rem;
             }
           }
