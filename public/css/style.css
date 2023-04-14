@@ -549,7 +549,6 @@ footer .footer__container .footer__links li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotate(180deg);
   transition: 0.5s;
   margin: -1rem -5rem -1rem 1.8rem;
 }
@@ -582,6 +581,20 @@ footer .footer__container .footer__links li a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.menu__item {
+  animation: itemAppear 1.5s;
+  animation-timing-function: cubic-bezier(1.1, 1.1, 1.1, 1.1);
+  animation-fill-mode: both;
+}
+
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
