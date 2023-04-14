@@ -82,7 +82,29 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .order {
+    width: 60%;
+  }
+  .menu__header h1 {
+    font-size: 22px;
+  }
+  .menu__header i {
+    top: 6.5vh;
+    right: 7vw;
+  }
+}
 @media screen and (min-width: 768px) {
+  .menu__header {
+    text-align: center;
+  }
+  .menu__header h1 {
+    font-size: 26px;
+  }
+  .menu__header i {
+    top: 6.5vh;
+    right: 2vw;
+  }
   .restaurant__cards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -92,6 +114,12 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
+  }
+  .btn__order {
+    padding: 10px 0;
+  }
+  .order {
+    width: 40%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -315,8 +343,6 @@ main .restaurant .restaurant__card .card__content i:hover {
 button {
   color: #fff;
   background: linear-gradient(360deg, #9356dc -10%, #ff79da 101%);
-  padding: 13px 18px;
-  width: 80%;
   margin: 0 auto;
   outline: none;
   border: none;
@@ -327,6 +353,17 @@ button {
 button:hover {
   transition: 0.2s ease-in;
   background: linear-gradient(360deg, #9f6ddc -10%, #fa91dc 100%);
+}
+
+.explore__menu {
+  padding: 13px 18px;
+  width: 80%;
+}
+
+.order {
+  text-align: center;
+  padding: 13px 10px;
+  margin: 0 auto;
 }
 
 .new_label {
@@ -440,11 +477,8 @@ footer .footer__container .footer__links li a {
 .main__restaurant .restaurant__menu .menu__header h1 {
   font-weight: 400;
   color: #101010;
-  font-size: 22px;
 }
 .main__restaurant .restaurant__menu .menu__header i {
-  top: 6.5vh;
-  right: 7vw;
   position: absolute;
   transform: translateY(-50%);
   font-size: 25px;
@@ -515,7 +549,8 @@ footer .footer__container .footer__links li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.4s ease-in-out;
+  transform: rotate(180deg);
+  transition: 0.5s;
   margin: -1rem -5rem -1rem 1.8rem;
 }
 .main__restaurant .restaurant__menu .menu__container .menu__items .menu__item .menu__item-checking i {

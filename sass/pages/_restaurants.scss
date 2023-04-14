@@ -35,11 +35,8 @@
       h1 {
         font-weight: 400;
         color: #101010;
-        font-size: 22px;
       }
       & i {
-        top: 6.5vh;
-        right: 7vw;
         position: absolute;
         transform: translateY(-50%);
         font-size: 25px;
@@ -116,7 +113,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.4s ease-in-out;
+            transform: rotate(180deg);
+            transition: 0.5s;
             margin: -1rem -5rem -1rem 1.8rem;
 
             & i {
