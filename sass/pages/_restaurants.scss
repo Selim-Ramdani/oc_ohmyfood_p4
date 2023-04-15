@@ -121,6 +121,8 @@
               width: 1.3rem;
               background-color: white;
               color: $tertiary;
+              transform: rotate(180deg);
+              transition: 0.5s;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -130,6 +132,9 @@
           &:hover {
             .menu__item-checking {
               margin-right: -1rem;
+            }
+            .menu__item-checking i {
+              transform: rotate(0);
             }
           }
         }
