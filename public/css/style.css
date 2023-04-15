@@ -557,6 +557,8 @@ footer .footer__container .footer__links li a {
   width: 1.3rem;
   background-color: white;
   color: #99e2d0;
+  transform: rotate(180deg);
+  transition: 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -564,6 +566,9 @@ footer .footer__container .footer__links li a {
 }
 .main__restaurant .restaurant__menu .menu__container .menu__items .menu__item:hover .menu__item-checking {
   margin-right: -1rem;
+}
+.main__restaurant .restaurant__menu .menu__container .menu__items .menu__item:hover .menu__item-checking i {
+  transform: rotate(0);
 }
 
 @keyframes loader {
