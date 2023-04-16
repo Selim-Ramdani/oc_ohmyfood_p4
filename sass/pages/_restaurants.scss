@@ -49,16 +49,21 @@
     .menu__container {
       .menu__header {
         h2 {
+          text-align: left;
+          position: relative;
+          text-transform: uppercase;
           font-size: 16px;
           font-weight: 300;
           line-height: 30px;
-        }
-        &::after {
-          content: "";
-          height: 3px;
-          width: 40px;
-          background: #99e2d0;
-          display: block;
+          &::after {
+            content: "";
+            height: 3px;
+            width: 40px;
+            background: #99e2d0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
         }
       }
       .menu__items {
