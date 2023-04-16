@@ -21,16 +21,14 @@
 
 .menu__item {
   animation: itemAppear 1.5s;
-  animation-timing-function: cubic-bezier(1.1,1.1,1.1,1.1);
   animation-fill-mode: both;
 }
 
 @keyframes itemAppear {
   0% {
-    transform: scale(0)
+    transform: scale(0);
   }
   100% {
     transform: scale(1);
   }
 }
-
